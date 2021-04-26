@@ -1,0 +1,183 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./home.css";
+@import "./team.css";
+@import "./form.css";
+@import "./contacts.css";
+@import "./products.css";
+@import "./services.css";
+@import "./reviews.css";
+
+
+:root {
+    --firstColor: #222222;
+    --secondColor: #FF7A00;
+    --thirdColor: #FFFFFF;
+    --fourColor: #FFF1E3;
+    --fiveColor: #FFF2E5;
+    --sixColor: #000000;
+    --sevenColor: #C4C4C4;
+    --eightColor: #3D3A37;
+    --nineColor: #DFDFDF;
+    --tenColor: #D8D8D8;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body,
+input,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ol,
+ul,
+li {
+    list-style-type: none;
+}
+
+.container {
+    margin: 0 260px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.button-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    background: var(--firstColor);
+    border-radius: 4px;
+    outline: none;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 1px solid var(--fiveColor);
+    color: var(--thirdColor);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    background: var(--secondColor);
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: none;
+    color: var(--thirdColor);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--secondColor);
+}
+
+.title__circle {
+    background-color: var(--secondColor);
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.arrow-right a {
+    border-top: 4px solid var(--secondColor);
+    border-right: 4px solid var(--secondColor);
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+.arrow-left a {
+    border-top: 4px solid var(--secondColor);
+    border-right: 4px solid var(--secondColor);
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    transform: rotate(225deg);
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--thirdColor);
+}
+
+@media (max-width:1024px) {
+    .container {
+        margin: 0 16px 0 16px;
+    }
+
+    .title__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+        text-align: center;
+        color: var(--secondColor);
+    }
+    
+    .title__circle {
+        background-color: var(--secondColor);
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+}

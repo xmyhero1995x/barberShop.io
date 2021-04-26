@@ -1,0 +1,277 @@
+.form {
+    display: flex;
+    justify-content: center;
+    background: url(../img/arthur-humeau.png) left/cover no-repeat;
+    background-color: #fff;
+    width: 100%;
+    margin: 112px 0 0 0;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--thirdColor);
+    border: 10px solid var(--thirdColor);
+    margin: 63px 0 64px 0;
+    padding: 64px 126px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--firstColor);
+}
+
+.form__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__title p:nth-child(1) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+
+.form__title p:nth-child(2) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin: 32px 0 64px 0;
+}
+
+.form__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form__box span {
+    margin: 0 0 8px 24px;
+}
+
+.label-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-border {
+    border: 1px solid var(--nineColor);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 16px 24px;
+}
+
+input {
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form__box_client-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__box_client-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-name {
+    width: 100%;
+}
+
+.form__box_client-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 24px 0 24px 0;
+}
+
+.form-time {
+    margin: 0 24px 0 0;
+}
+
+.form__masters-title {
+    display: flex;
+    margin: 0 0 8px 24px;
+}
+
+.form__masters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 24px 0;
+    border: 1px solid var(--nineColor);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 16px 24px;
+}
+
+.form__masters_column-first {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__masters_column-second {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__services-title {
+    display: flex;
+    margin: 0 0 8px 24px;
+}
+
+.form__services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid var(--nineColor);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 16px 24px;
+}
+
+.form__services_column-first {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__services_column-second {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="checkbox"] {
+    background-color: yellow;
+    color: yellow;
+}
+
+.form__button-second {
+    display: flex;
+    width: 165px;
+    margin: 32px 0 0 0;
+}
+
+@media (max-width:1024px) {
+    .form {
+        display: flex;
+        justify-content: start;
+        background: none;
+        margin: 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        ;
+        border-radius: 4px;
+    }
+
+
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .form__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 16px 0;
+    }
+
+    .form__title p:nth-child(1) {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 24px 0;
+    }
+
+
+    .form__title p:nth-child(2) {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .form__box {
+        display: flex;
+        width: 100%;
+    }
+
+    .form__box span {
+        margin: 0 0 8px 11px;
+    }
+
+    .label-column {
+        margin: 16px 0 0 0;
+    }
+
+    .form__box_client-time {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .form-time {
+        margin: 0;
+    }
+
+    .form__masters-title {
+        margin: 16px 0 8px 11px;
+    }
+
+    .form__masters {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .form__services-title {
+        margin: 16px 0 8px 11px;
+    }
+
+    .form__services {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .form__services_column-first form:nth-child(1) {
+        display: none;
+    }
+
+    .form__services_column-second form:nth-child(2) {
+        display: none;
+    }
+
+    .form__button-second {
+        width: 100%;
+        margin: 32px 0 64px 0;
+    }
+}

@@ -1,0 +1,199 @@
+.reviews {
+    display: flex;
+    justify-content: center;
+    margin: 174px 0 0 0;
+    background: url(../img/arthur-humeau-opacity.jpg) left/cover no-repeat;
+    width: 100%;
+}
+
+.reviews__bg {
+    display: flex;
+}
+
+
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 84px 0 0 0;
+}
+
+.reviews__photos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin: 80px 0 0 214px;
+    position: relative;
+}
+
+.reviews__arrow-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 37px 0 0;
+    height: 70px;
+}
+
+.reviews__reactengle {
+    background-image: url(/img/Rectangle.png);
+    width: 202px;
+    height: 330px;
+    position: absolute;
+    top: -15px;
+    left: 225px;
+}
+
+.reviews__slider {
+    width: 197px;
+    height: 300px;
+}
+
+.reviews__slider-line {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 788px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.reviews__slider-line :nth-child(-n+3) {
+    margin: 0 4px 0 0;
+}
+
+.reviews__arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 487px;
+    height: 70px;
+}
+
+.reviews__discription {
+    display: flex;
+    flex-direction: column;
+    margin: 62px 0 100px 438px;
+    width: 602px;
+}
+
+.reviews__description-name p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--secondColor);
+}
+
+.reviews__discription-text {
+    margin: 24px 0 0 0;
+}
+
+.reviews__discription-text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--fourColor);
+}
+
+@media (max-width:1024px) {
+    .reviews {
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+
+    .reviews__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 32px 0 41px 0;
+        width: 100%;
+    }
+
+    .reviews__photos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .reviews__arrow-left {
+        display: none;
+    }
+
+    .reviews__reactengle {
+        background-image: url(/img/Rectangle.png);
+        width: 202px;
+        height: 330px;
+        position: absolute;
+        top: -15px;
+        left: 24px;
+    }
+
+    .reviews__slider {
+        width: 197px;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .reviews__slider-line {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 788px;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+
+    .photo-first img {
+        width: 202px;
+        height: 300px;
+    }
+
+    .photo-second {
+        width: 202px;
+        height: 300px;
+    }
+
+    .photo-third {
+        width: 202px;
+        height: 300px;
+    }
+
+    .photo-fourth {
+        width: 202px;
+        height: 300px;
+    }
+
+    .reviews__arrow-right {
+        height: 53px;
+        width: 53px;
+        margin: 0 0 0 35px;
+    }
+
+
+
+    .reviews__discription {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        margin: 41px 0 65px 0;
+    }
+
+    .reviews__discription-text {
+        margin: 16px 0 0 0;
+    }
+}

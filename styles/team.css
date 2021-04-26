@@ -1,0 +1,181 @@
+.team {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 105px 0 0 0;
+}
+
+.team__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.team__container-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.team__rectangle {
+    background-image: url(/img/Rectangle\ 11.png);
+    width: 200px;
+    height: 334px;
+    position: absolute;
+    top: -20px;
+    left: 220px;
+}
+
+.team__slider {
+    width: 196px;
+    height: 300px;
+}
+
+.team__slider-line {
+    display: flex;
+    height: 300px;
+    width: 788px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+.team__slider-line :nth-child(-n+3){
+    margin: 0 4px 0 0;
+}
+
+
+.team__arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 590px;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+}
+
+.team__discription {
+    display: flex;
+    flex-direction: column;
+}
+
+.team__title {
+    justify-content: flex-end;
+    margin: 0 0 44px 0;
+}
+
+.team__discription-name {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--secondColor);
+    margin: 24px 0 0 0;
+}
+
+.team__discription-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 441px;
+}
+
+.team__discription-text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (max-width:1024px) {
+    .team {
+        margin: 32px 0 76px 0;
+    }
+
+    .team__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .team__container-photos {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .team__rectangle {
+        background-image: url(/img/Rectangle\ 11.png);
+        width: 200px;
+        height: 334px;
+        position: absolute;
+        top: -20px;
+        left: 20px;
+    }
+
+    .team__slider {
+        width: 196px;
+        height: 294px;
+        overflow: hidden;
+    }
+
+    .team__slider-line {
+        display: flex;
+        height: 300px;
+        width: 788px;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+
+    .team__container-photos :nth-child(-n+3) {
+        margin: 0;
+    }
+
+    .photo-first {
+        margin: 0;
+    }
+
+    .photo-second {
+        margin: 0;
+    }
+
+    .photo-third {
+        margin: 0;
+    }
+
+    .photo-four {
+        margin: 0;
+    }
+
+    .team__arrow-right {
+        height: 53px;
+        width: 53px;
+        margin: 0 0 0 35px;
+    }
+
+    .team__discription {
+        margin: 41px 0 0 0;
+        width: 100%;
+    }
+
+    .team__title {
+        display: flex;
+        margin: 0 0 41px 0;
+        justify-content: start;
+    }
+
+    .team__discription-name {
+        font-size: 16px;
+        margin: 0 0 16px 0;
+    }
+
+    .team__discription-text {
+        width: 100%;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,146 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin: 138px 0 0 0;
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts__container-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 102px 0 0;
+}
+
+.contacts__contact-us-info {
+    margin: 32px 0 0 0;
+}
+
+.contacts__contact-us-info p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.contacts__contact-us p:nth-child(-n+5) {
+    margin: 24px 0 0 0;
+}
+
+.contacts__social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 35px 0 0 0;
+}
+
+.contacts__social-media a :nth-child(-n+3) {
+    margin: 0 15px 0 0;
+}
+
+.contacts__shedule {
+    display: flex;
+    flex-direction: column;
+    margin: 47px 0 0 0;
+}
+
+.contacts__shedule-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 32px 0 0 0;
+}
+
+.contacts__shedule-info-days {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 0;
+
+}
+
+.contacts__shedule-info-days p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contacts__shedule-info-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__shedule-info-time p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+@media (max-width:1024px) {
+
+    .contacts {
+        margin: 43px 0 0 0;
+    }
+
+    .contacts__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__contact-us p:nth-child(-n+5) {
+        margin: 16px 0 0 0;
+    }
+
+    .contacts__container-information {
+        margin: 0;
+    }
+
+    .contacts__contact-us-info {
+        margin: 20px 0 0 0;
+        text-transform: lowercase;
+    }
+
+    .contacts__contact-us-info p {
+        font-weight: normal;
+    }
+
+    .contacts__social-media {
+        margin: 25px 0 0 0;
+    }
+
+    .contacts__shedule {
+        margin: 35px 0 0 0;
+    }
+
+    .contacts__shedule-info {
+        margin: 20px 0 0 0;
+    }
+
+    .contacts__shedule-info-days p {
+        font-weight: normal;
+        margin: 16px 0 0 0;
+    }
+
+    .contacts__shedule-info-time p{
+        font-weight: normal; 
+        margin: 16px 0 0 0;
+    }
+
+    .contacts__map {
+        margin: 16px 0 0 0;
+    }
+
+    .contacts__map img {
+        height: 188px;
+        width: 100%;
+    }
+}
