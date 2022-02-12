@@ -1,27 +1,26 @@
 .home {
+    background: url("../img/allef-vinicius.png") top left/cover no-repeat;
+    display: flex;
     display: flex;
     justify-content: center;
-    background: url("../img/allef-vinicius.png") top left/cover no-repeat;
     margin: 98px 0 0 0;
     width: 100%;
-    display: flex;
 }
 
-.home__discription {
+.home__container {
+    display: flex;
+    padding: 309px 0 311px 0;
+}
+
+.home__container-discription {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 209px 0 311px 0;
-}
-
-.home__discription-container {
-    display: flex;
 }
 
 .home__discription-text {
     display: flex;
-    width: 601px;
     margin-top: 73.21px;
+    width: 601px;
 }
 
 .home__discription-text p {
@@ -39,13 +38,13 @@
 
 @media (max-width:1024px) {
     .home {
-        margin: 67px 0 0 0;
         background: url("../img/allef-vinicius-320.png") top left/cover no-repeat;
         height: 100%;
+        margin: 67px 0 0 0;
     }
 
-    .home__discription {
-        margin: 213px 0 0 0;
+    .home__container {
+        padding: 213px 0 52px 0;
         width: 100%;
     }
 

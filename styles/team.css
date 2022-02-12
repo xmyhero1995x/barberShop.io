@@ -2,45 +2,46 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 105px 0 0 0;
 }
 
 .team__container {
-    display: flex;
-    justify-content: space-between;
     align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 106px 0 100px 0;
     width: 100%;
 }
 
 .team__container-photos {
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
     position: relative;
 }
 
 .team__rectangle {
     background-image: url(/img/Rectangle\ 11.png);
-    width: 200px;
     height: 334px;
+    left: 220px;
     position: absolute;
     top: -20px;
-    left: 220px;
+    width: 200px;
 }
 
 .team__slider {
-    width: 196px;
     height: 300px;
+    width: 196px;
 }
 
 .team__slider-line {
     display: flex;
     height: 300px;
-    width: 788px;
-    position: relative;
     left: 0;
+    position: relative;
     transition: all ease 1s;
+    width: 788px;
 }
 .team__slider-line :nth-child(-n+3){
     margin: 0 4px 0 0;
@@ -48,18 +49,17 @@
 
 
 .team__arrow-right {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 0 0 590px;
     cursor: pointer;
-    width: 53px;
+    display: flex;
     height: 53px;
+    justify-content: center;
+    margin: 0 0 0 590px;
+    width: 53px;
 }
 
 .team__discription {
     display: flex;
-    flex-direction: column;
 }
 
 .team__title {
@@ -68,11 +68,11 @@
 }
 
 .team__discription-name {
+    color: var(--secondColor);
     font-family: Montserrat;
+    font-size: 32px;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
-    color: var(--secondColor);
     margin: 24px 0 0 0;
 }
 
@@ -85,9 +85,9 @@
 
 .team__discription-text p {
     font-family: Montserrat;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
     line-height: 20px;
 }
 
@@ -97,39 +97,40 @@
     }
 
     .team__container {
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        padding: 0;
     }
 
     .team__container-photos {
         display: flex;
-        width: 100%;
         position: relative;
+        width: 100%;
     }
 
     .team__rectangle {
         background-image: url(/img/Rectangle\ 11.png);
-        width: 200px;
         height: 334px;
+        left: 20px;
         position: absolute;
         top: -20px;
-        left: 20px;
+        width: 200px;
     }
 
     .team__slider {
-        width: 196px;
         height: 294px;
         overflow: hidden;
+        width: 196px;
     }
 
     .team__slider-line {
         display: flex;
         height: 300px;
-        width: 788px;
-        position: relative;
         left: 0;
+        position: relative;
         transition: all ease 1s;
+        width: 788px;
     }
 
     .team__container-photos :nth-child(-n+3) {
@@ -154,8 +155,8 @@
 
     .team__arrow-right {
         height: 53px;
-        width: 53px;
         margin: 0 0 0 35px;
+        width: 53px;
     }
 
     .team__discription {
@@ -165,8 +166,8 @@
 
     .team__title {
         display: flex;
-        margin: 0 0 41px 0;
         justify-content: start;
+        margin: 0 0 41px 0;
     }
 
     .team__discription-name {

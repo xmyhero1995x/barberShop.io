@@ -1,26 +1,25 @@
 .form {
+    background-color: #fff;
+    background: url(../img/arthur-humeau.png) left/cover no-repeat;
     display: flex;
     justify-content: center;
-    background: url(../img/arthur-humeau.png) left/cover no-repeat;
-    background-color: #fff;
     width: 100%;
-    margin: 112px 0 0 0;
 }
 
 .form__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: var(--thirdColor);
     border: 10px solid var(--thirdColor);
-    margin: 63px 0 64px 0;
-    padding: 64px 126px;
+    color: var(--firstColor);
+    display: flex;
+    flex-direction: column;
     font-family: Montserrat;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    color: var(--firstColor);
+    justify-content: center;
+    margin: 63px 0 64px 0;
+    padding: 64px 126px;
 }
 
 .form__title {
@@ -41,11 +40,11 @@
 
 .form__title p:nth-child(2) {
     font-family: Montserrat;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    text-align: center;
     margin: 32px 0 64px 0;
+    text-align: center;
 }
 
 .form__box {
@@ -113,13 +112,13 @@ input:focus {
 }
 
 .form__masters {
+    border-radius: 4px;
+    border: 1px solid var(--nineColor);
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 0 24px 0;
-    border: 1px solid var(--nineColor);
-    box-sizing: border-box;
-    border-radius: 4px;
     padding: 16px 24px;
 }
 
@@ -139,12 +138,12 @@ input:focus {
 }
 
 .form__services {
+    border-radius: 4px;
+    border: 1px solid var(--nineColor);
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid var(--nineColor);
-    box-sizing: border-box;
-    border-radius: 4px;
     padding: 16px 24px;
 }
 
@@ -171,23 +170,23 @@ input[type="checkbox"] {
 
 @media (max-width:1024px) {
     .form {
+        background: none;
+        border-radius: 4px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: start;
-        background: none;
         margin: 0;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        ;
-        border-radius: 4px;
     }
 
 
     .form__container {
+        align-items: flex-start;
+        border: 0;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         margin: 0;
         padding: 0;
-        border: 0;
+        padding: 44px 0 64px 0;
     }
 
     .form__title {
@@ -199,22 +198,22 @@ input[type="checkbox"] {
 
     .form__title p:nth-child(1) {
         font-family: Montserrat;
+        font-size: 16px;
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
+        margin: 0 0 24px 0;
         text-align: center;
         text-transform: uppercase;
-        margin: 0 0 24px 0;
     }
 
 
     .form__title p:nth-child(2) {
         font-family: Montserrat;
+        font-size: 16px;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        text-align: center;
         margin: 0;
+        text-align: center;
     }
 
     .form__box {
@@ -258,8 +257,8 @@ input[type="checkbox"] {
     .form__services {
         display: flex;
         flex-direction: column;
-        padding: 10px;
         margin: 0;
+        padding: 10px;
     }
 
     .form__services_column-first form:nth-child(1) {
@@ -272,6 +271,5 @@ input[type="checkbox"] {
 
     .form__button-second {
         width: 100%;
-        margin: 32px 0 64px 0;
     }
 }

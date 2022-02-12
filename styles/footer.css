@@ -1,25 +1,24 @@
 footer {
+    background-color: var(--firstColor);
     display: flex;
     justify-content: center;
-    background-color: var(--firstColor);
     width: 100%;
-    margin: 157px 0 0px 0;
 }
 
 .footer p {
+    color: var(--thirdColor);
     font-family: Montserrat;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    color: var(--thirdColor);
 }
 
 .footer__container {
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 44px 0 0 0;
+    padding: 44px 0 170px 0;
     width: 100%;
 }
 
@@ -34,50 +33,45 @@ footer {
     margin: 0 300px 0 0;
 }
 
-.footer_menu__list {
+.footer__menu_list {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
 }
 
-.footer_menu__list :nth-child(-n+5) {
+.footer__menu_list :nth-child(-n+5) {
     width: 90px;
 }
 
-.footer_menu__list li:hover {
+.footer__menu_item:hover {
     list-style-type: disc;
 }
 
-ul li::marker {
-    color: var(--secondColor);
-}
 
-
-.footer_menu__item a {
+.footer__menu_item a {
+    color: var(--thirdColor);
     font-family: Montserrat;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    color: var(--thirdColor);
     white-space: nowrap;
 
 }
 
-.footer_menu__item:nth-child(-n+5) {
+.footer__menu_item:nth-child(-n+5) {
     margin: 0 0 24px 0;
 }
 
-.footer_menu__item :hover {
-    font-weight: bold;
+.footer__menu_item :hover {
     color: var(--secondColor);
-
+    font-weight: bold;
 }
 
 .footer__information {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    white-space: nowrap;
 }
 
 .footer__contuct-us {
@@ -128,14 +122,11 @@ ul li::marker {
 
 
 @media (max-width:1024px) {
-    .footer {
-        margin: 10px 0 0 0;
-    }
-
     .footer__container {
         display: flex;
         flex-direction: column;
         margin: 0;
+        padding: 24px 0 67px 0;
     }
 
     .footer__logo {

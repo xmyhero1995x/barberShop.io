@@ -1,22 +1,22 @@
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1030;
-    height: 100px;
-    padding: 23px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     background-color: var(--firstColor);
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
 }
 
 .header__inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 23px 0;
     width: 100%;
 }
 
@@ -25,73 +25,53 @@ header {
 }
 
 .bag_img {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .header__menu {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
 
-.logo_header {
+.header__logo {
     display: flex;
-    margin: 0 100px 0 0;
 }
 
-.header_menu__list {
+.header__menu_list {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: Montserrat;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-
 }
 
-.header_menu__list {
-    display: flex;
+
+.header__menu_item a{
     align-items: center;
-}
-
-.header_menu__list li:hover {
-    list-style-type: disc;
-}
-
-ul li::marker {
-    color: var(--secondColor);
-}
-
-.header_menu__item {
-    margin: 0 44px 0 0;
-}
-
-.header_menu__item a {
     color: var(--thirdColor);
+    display: flex;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    margin-right: 40px;
 }
 
-.header_menu__item :hover {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
+.header__menu_item a:hover {
     color: var(--secondColor);
-
-    list-style: disc;
+    font-weight: bold;
+    list-style-type: disc !important;
 }
 
 .header__shopping-bag {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin: 0 40px 0 0;
 }
 
@@ -100,19 +80,19 @@ ul li::marker {
 }
 
 .header__shopping-bag p {
+    color: var(--thirdColor);
     font-family: Montserrat;
+    font-size: 24px;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
     line-height: 29px;
-    color: var(--thirdColor);
 }
 
 .header__buttons {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .header__button-first {
@@ -132,15 +112,15 @@ ul li::marker {
     }
 
     header {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 50;
-        height: 68px;
-        display: flex;
         align-items: center;
         background-color: var(--firstColor);
+        display: flex;
+        height: 68px;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 50;
     }
 
     .header__inner {
@@ -151,10 +131,10 @@ ul li::marker {
     }
 
     .header__burger-menu {
+        align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         width: 100%;
     }
 
@@ -165,32 +145,32 @@ ul li::marker {
 
     .header__burger {
         display: block;
+        height: 20px;
         left: 3px;
         position: relative;
         width: 30px;
-        height: 20px;
         z-index: 3;
     }
 
     .header__burger span {
-        position: absolute;
         background-color: var(--thirdColor);
-        left: 0;
-        width: 100%;
         height: 4px;
+        left: 0;
+        position: absolute;
         top: 8px;
         transition: all 0.3s ease 0s;
+        width: 100%;
     }
 
     .header__burger:before,
     .header__burger:after {
-        content: '';
         background-color: var(--thirdColor);
-        position: absolute;
-        width: 100%;
+        content: '';
         height: 4px;
         left: 0;
+        position: absolute;
         transition: all 0.3s ease 0s;
+        width: 100%;
     }
 
     .header__burger.active {
@@ -237,26 +217,26 @@ ul li::marker {
     }
 
     .header__shopping-bag-mobile p {
+        color: var(--thirdColor);
         font-family: Montserrat;
+        font-size: 24px;
         font-style: normal;
         font-weight: normal;
-        font-size: 24px;
         line-height: 29px;
-        color: var(--thirdColor);
     }
 
     .header__menu {
-        display: flex;
         align-items: flex-start;
+        background-color: var(--firstColor);
+        display: flex;
+        height: 100%;
+        left: 0;
+        overflow: auto;
+        padding: 64px 16px 64px 16px;
         position: fixed;
         top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
         transition: all 0.3s ease 0s;
-        background-color: var(--firstColor);
-        padding: 64px 16px 0 16px;
+        width: 100%;
     }
 
     .header__menu.active {
@@ -265,36 +245,31 @@ ul li::marker {
         top: 0;
     }
 
-    .logo_header {
+    .header__logo {
+        height: 36px;
         margin: 7px 0 0 0;
         width: 110px;
-        height: 36px;
     }
 
-    .logo_header img {
+    .header__logo img {
         width: 100%;
     }
 
-    nav {
-        margin: 44px 0 0 40px;
-    }
-
-    .header_menu__list {
+    .header__menu_list {
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
 
     }
 
-    .header_menu__item:nth-child(2),
-    .header_menu__item:nth-child(3) {
+    .header__menu_item:nth-child(2),
+    .header__menu_item:nth-child(3) {
         margin: 32px 0 0 0;
     }
 
     .header__buttons {
         display: flex;
         flex-direction: column;
-        margin: 161px 0 0 0;
         width: 100%;
     }
 

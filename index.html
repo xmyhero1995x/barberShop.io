@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Barber Shop</title>
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -27,17 +27,14 @@
                     </div>
                 </div>
                 <div class="header__menu">
-                    <div class="logo_header">
+                    <div class="header__logo">
                         <img src="./img/Logo.png" alt="logo">
-
                     </div>
-                    <nav>
-                        <ul class="header_menu__list">
-                            <li class="header_menu__item"><a href="#">Home</a></li>
-                            <li class="header_menu__item"><a href="#products">Shop</a></li>
-                            <li class="header_menu__item"><a href="#team">Gallery</a></li>
-                        </ul>
-                    </nav>
+                    <ul class="header__menu_list">
+                        <li class="header__menu_item"><a href="#">Home</a></li>
+                        <li class="header__menu_item"><a href="#products">Shop</a></li>
+                        <li class="header__menu_item"><a href="#team">Gallery</a></li>
+                    </ul>
                     <div class="header__shopping-bag">
                         <a href="#">
                             <img src="./img/basket.png" alt="basket">
@@ -54,18 +51,20 @@
     </header>
     <section class="home" id="home">
         <div class="container">
-            <div class="home__discription">
-                <div class="home__discription-logo">
-                    <img src="./img/Logo_2.png" alt="logo">
+            <div class="home__container">
+                <div class="home__container-discription">
+                    <div class="home__discription-logo">
+                        <img src="./img/Logo_2.png" alt="logo">
+                    </div>
+                    <div class="home__discription-text">
+                        <p>Our barbershop is a place of style and mutual understanding in which it is pleasant to spend
+                            time.
+                        </p>
+                    </div>
+                    <button class="button-second home__button-second">
+                        book now
+                    </button>
                 </div>
-                <div class="home__discription-text">
-                    <p>Our barbershop is a place of style and mutual understanding in which it is pleasant to spend
-                        time.
-                    </p>
-                </div>
-                <button class="button-second home__button-second">
-                    book now
-                </button>
             </div>
         </div>
     </section>
@@ -153,39 +152,84 @@
     </section>
     <section class="team" id="team">
         <div class="container">
-            <div class="title team__title">
-                <div class="title__circle"></div>
-                <div class="title__text">Our team</div>
-            </div>
             <div class="team__container">
-                <div class="team__container-photos">
-                    <div class="team__rectangle"></div>
-                    <div class="team__slider">
-                        <div class="team__slider-line">
-                            <img src="./img/team_1.png" alt="team_1">
-                            <img src="./img/team_2.png" alt="team_2">
-                            <img src="./img/team_3.png" alt="team_3">
-                            <img src="./img/team_4.png" alt="team_4">
-                        </div>
-                    </div>
-                    <div class="arrow-right team__arrow-right">
-                        <a></a>
-                    </div>
+                <div class="title team__title">
+                    <div class="title__circle"></div>
+                    <div class="title__text">Our team</div>
                 </div>
-                <div class="team__discription">
-                    <div class="team__discription-name">
-                        Jorge Jones
-                    </div>
-                    <div class="team__discription-text">
-                        <p>- How did you become a barber?</p>
-                        <p>- I decided to master the creative profession. And he found himself precisely in this. So my
-                            life
-                            has changed dramatically.</p>
-                        <p>- What exactly do you like in your profession? Why are you blissing?</p>
-                        <p>- I like to work in a men's team, communicating with interesting people.</p>
-                        <p>- Why should a person who wants a haircut choose you?</p>
-                        <p>- Because I'm old and charismatic.</p>
-                    </div>
+                <div class="slider swiper">
+                    <ul class="slider__list swiper-wrapper">
+                        <li class="slider__item swiper-slide">
+                            <div class="slider__box">
+                                <img src="https://images.unsplash.com/photo-1605990353351-0d1bfd8bc70e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                                    alt="photo" class="slider__img" />
+                            </div>
+                            <div class="slider__content">
+                                <h3 class="slider__title">Jorge Jones</h3>
+                                <p class="slider__text">
+                                    - How did you become a barber? - I decided to master the creative
+                                    profession. And he found himself precisely in this. So my life has
+                                    changed dramatically. - What exactly do you like in your
+                                    profession? Why are you blissing? - I like to work in a men's
+                                    team, communicating with interesting people. - Why should a person
+                                    who wants a haircut choose you? - Because I'm old and charismatic.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <div class="slider__box">
+                                <img src="https://images.unsplash.com/photo-1544728397-e9f8875bd5fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                    alt="photo" class="slider__img" />
+                            </div>
+                            <div class="slider__content">
+                                <h3 class="slider__title">Jorge Jones</h3>
+                                <p class="slider__text">
+                                    - How did you become a barber? - I decided to master the creative
+                                    profession. And he found himself precisely in this. So my life has
+                                    changed dramatically. - What exactly do you like in your
+                                    profession? Why are you blissing? - I like to work in a men's
+                                    team, communicating with interesting people. - Why should a person
+                                    who wants a haircut choose you? - Because I'm old and charismatic.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <div class="slider__box">
+                                <img src="https://images.unsplash.com/photo-1625720388874-c02b13df4515?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                    alt="photo" class="slider__img" />
+                            </div>
+                            <div class="slider__content">
+                                <h3 class="slider__title">Jorge Jones</h3>
+                                <p class="slider__text">
+                                    - How did you become a barber? - I decided to master the creative
+                                    profession. And he found himself precisely in this. So my life has
+                                    changed dramatically. - What exactly do you like in your
+                                    profession? Why are you blissing? - I like to work in a men's
+                                    team, communicating with interesting people. - Why should a person
+                                    who wants a haircut choose you? - Because I'm old and charismatic.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <div class="slider__box">
+                                <img src="https://images.unsplash.com/photo-1558466018-750096b8ead7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=806&q=80"
+                                    alt="photo" class="slider__img" />
+                            </div>
+                            <div class="slider__content">
+                                <h3 class="slider__title">Jorge Jones</h3>
+                                <p class="slider__text">
+                                    - How did you become a barber? - I decided to master the creative
+                                    profession. And he found himself precisely in this. So my life has
+                                    changed dramatically. - What exactly do you like in your
+                                    profession? Why are you blissing? - I like to work in a men's
+                                    team, communicating with interesting people. - Why should a person
+                                    who wants a haircut choose you? - Because I'm old and charismatic.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -430,38 +474,79 @@
                         <div class="title__circle"></div>
                         <div class="title__text">Our reviews</div>
                     </div>
-                    <div class="reviews__photos">
-                        <div class="reviews__arrow-left arrow-left">
-                            <a></a>
-                        </div>
-                        <div class="reviews__reactengle"></div>
-                        <div class="reviews__slider">
-                            <div class="reviews__slider-line">
-                                    <img src="./img/team_1.png" alt="team_1">
-                                    <img src="./img/team_2.png" alt="team_2">
-                                    <img src="./img/team_3.png" alt="team_3">
-                                    <img src="./img/team_4.png" alt="team_4">
-                            </div>
-                        </div>
-                        <div class="reviews__arrow-right arrow-right">
-                            <a></a>
-                        </div>
-                    </div>
-                    <div class="reviews__discription">
-                        <div class="reviews__description-name">
-                            <p>Jorge Jones</p>
-                        </div>
-                        <div class="reviews__discription-text">
-                            <p>- How did you become a barber?</p>
-                            <p>- I decided to master the creative profession. And he found himself precisely in this. So
-                                my
-                                life
-                                has changed dramatically.</p>
-                            <p>- What exactly do you like in your profession? Why are you blissing?</p>
-                            <p>- I like to work in a men's team, communicating with interesting people.</p>
-                            <p>- Why should a person who wants a haircut choose you?</p>
-                            <p>- Because I'm old and charismatic.</p>
-                        </div>
+                    <div class="slider swiper">
+                        <ul class="slider__list swiper-wrapper">
+                            <li class="slider__item swiper-slide">
+                                <div class="slider__box">
+                                    <img src="https://images.unsplash.com/photo-1605990353351-0d1bfd8bc70e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                                        alt="photo" class="slider__img" />
+                                </div>
+                                <div class="slider__content">
+                                    <h3 class="slider__title">Jorge Jones</h3>
+                                    <p class="slider__text slider__text--white">
+                                        - How did you become a barber? - I decided to master the creative
+                                        profession. And he found himself precisely in this. So my life has
+                                        changed dramatically. - What exactly do you like in your
+                                        profession? Why are you blissing? - I like to work in a men's
+                                        team, communicating with interesting people. - Why should a person
+                                        who wants a haircut choose you? - Because I'm old and charismatic.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="slider__item swiper-slide">
+                                <div class="slider__box">
+                                    <img src="https://images.unsplash.com/photo-1544728397-e9f8875bd5fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="photo" class="slider__img" />
+                                </div>
+                                <div class="slider__content">
+                                    <h3 class="slider__title">Jorge Jones</h3>
+                                    <p class="slider__text slider__text--white">
+                                        - How did you become a barber? - I decided to master the creative
+                                        profession. And he found himself precisely in this. So my life has
+                                        changed dramatically. - What exactly do you like in your
+                                        profession? Why are you blissing? - I like to work in a men's
+                                        team, communicating with interesting people. - Why should a person
+                                        who wants a haircut choose you? - Because I'm old and charismatic.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="slider__item swiper-slide">
+                                <div class="slider__box">
+                                    <img src="https://images.unsplash.com/photo-1625720388874-c02b13df4515?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="photo" class="slider__img" />
+                                </div>
+                                <div class="slider__content">
+                                    <h3 class="slider__title">Jorge Jones</h3>
+                                    <p class="slider__text slider__text--white">
+                                        - How did you become a barber? - I decided to master the creative
+                                        profession. And he found himself precisely in this. So my life has
+                                        changed dramatically. - What exactly do you like in your
+                                        profession? Why are you blissing? - I like to work in a men's
+                                        team, communicating with interesting people. - Why should a person
+                                        who wants a haircut choose you? - Because I'm old and charismatic.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="slider__item swiper-slide">
+                                <div class="slider__box">
+                                    <img src="https://images.unsplash.com/photo-1558466018-750096b8ead7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=806&q=80"
+                                        alt="photo" class="slider__img" />
+                                </div>
+                                <div class="slider__content">
+                                    <h3 class="slider__title">Jorge Jones</h3>
+                                    <p class="slider__text slider__text--white">
+                                        - How did you become a barber? - I decided to master the creative
+                                        profession. And he found himself precisely in this. So my life has
+                                        changed dramatically. - What exactly do you like in your
+                                        profession? Why are you blissing? - I like to work in a men's
+                                        team, communicating with interesting people. - Why should a person
+                                        who wants a haircut choose you? - Because I'm old and charismatic.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -519,11 +604,11 @@
                 </div>
                 <div class="footer__menu">
                     <nav>
-                        <ul class="footer_menu__list">
-                            <li class="footer_menu__item"><a >Home</a></li>
-                            <li class="footer_menu__item"><a >Shop</a></li>
-                            <li class="footer_menu__item"><a >Gallery</a></li>
-                            <li class="footer_menu__item"><a >Contact Us</a></li>
+                        <ul class="footer__menu_list">
+                            <li class="footer__menu_item"><a href="#">Home</a></li>
+                            <li class="footer__menu_item"><a href="#">Shop</a></li>
+                            <li class="footer__menu_item"><a href="#">Gallery</a></li>
+                            <li class="footer__menu_item"><a href="#">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -543,13 +628,14 @@
                         <div class="footer__container-media">
                             <a href="#"><img src="./img/Icon_Social_Instagram.png" alt="instagram"></a>
                             <a href="#"><img src="./img/Icon_Social_Youtube.png" alt="youtube"></a>
-                            <a href="#"><img src="./img/Icon_SOcial_Facebook.png" alt="facebook"></a>
+                            <a href="#"><img src="./img/Icon_Social_Facebook.png" alt="facebook"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>

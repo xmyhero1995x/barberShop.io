@@ -1,18 +1,18 @@
 .contacts {
     display: flex;
     justify-content: center;
-    margin: 138px 0 0 0;
 }
 
 .contacts__container {
     display: flex;
     flex-direction: row;
+    padding: 130px 0 150px 0;
 }
 
 .contacts__container-information {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
     margin: 0 102px 0 0;
 }
@@ -23,9 +23,9 @@
 
 .contacts__contact-us-info p {
     font-family: Montserrat;
+    font-size: 16px;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
     line-height: 20px;
 }
 
@@ -34,8 +34,8 @@
 }
 
 .contacts__social-media {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: flex-start;
     margin: 35px 0 0 0;
 }
@@ -51,9 +51,9 @@
 }
 
 .contacts__shedule-info {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
     margin: 32px 0 0 0;
 }
@@ -67,9 +67,9 @@
 
 .contacts__shedule-info-days p {
     font-family: Montserrat;
+    font-size: 16px;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
 }
 
 .contacts__shedule-info-time {
@@ -87,13 +87,9 @@
 
 @media (max-width:1024px) {
 
-    .contacts {
-        margin: 43px 0 0 0;
-    }
-
     .contacts__container {
-        display: flex;
         flex-direction: column;
+        padding: 43px 0 10px 0;
     }
 
     .contacts__contact-us p:nth-child(-n+5) {
@@ -141,6 +137,6 @@
 
     .contacts__map img {
         height: 188px;
-        width: 100%;
+        width: auto;
     }
 }

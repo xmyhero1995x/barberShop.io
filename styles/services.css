@@ -1,14 +1,14 @@
 .services {
     background: url("/img/mignon-hemsley.png") left/cover no-repeat;
-    width: 100%;
     height: 718px;
     margin: 88px 0 0 0;
+    width: 100%;
 }
 
 .services__container {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .services__title {
@@ -16,30 +16,30 @@
 }
 
 .services__bg-second {
-    display: flex;
-    justify-content: center;
+    align-items: center;
     background: var(--sixColor) left/cover no-repeat;
-    opacity: 0.8;
-    width: 100%;
-    height: 100%;
+    display: flex;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    height: 100%;
+    justify-content: center;
     margin-top: 44px;
+    opacity: 0.8;
+    width: 100%;
 }
 
 .services__types-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 100px 0;
+    width: 100%;
 
 }
 
 .services__types {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .services__container-img-scissors {
@@ -84,9 +84,9 @@
 
 
 .services__types-box {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     margin: 0 140px 0 0;
 
@@ -104,9 +104,9 @@
 @media (max-width:1024px) {
     .services {
         background-image: none;
-        width: 100%;
         height: 100%;
         margin: 0;
+        width: 100%;
     }
 
     .services__container {
@@ -122,8 +122,8 @@
 
     .services__bg-second {
         background-color: var(--sixColor);
-        opacity: 0.8;
         margin: 0;
+        opacity: 0.8;
     }
 
     .services__types-container {
@@ -133,8 +133,8 @@
     }
 
     .services__types-box {
-        display: flex;
         align-items: flex-start;
+        display: flex;
         margin: 0;
     }
 
